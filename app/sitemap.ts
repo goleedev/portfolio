@@ -1,9 +1,8 @@
 import { MetadataRoute } from 'next';
-import { allBlogPosts } from '@/.contentlayer/generated/BlogPost/_index.mjs';
-
+import { allPosts } from '@/.contentlayer/generated';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const posts = allBlogPosts.sort(
+  const posts = allPosts.sort(
     (a, b) => Number(new Date(b.date)) - Number(new Date(a.date))
   );
 
@@ -15,7 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(post.date).toISOString().split('T')[0],
     })) ?? [];
 
-  const routes = ['', '/about', '/blog', '/projects'].map((route) => ({
+  const routes = ['', '/blog'].map((route) => ({
     url: `${siteUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }));
