@@ -1,11 +1,9 @@
-import HomeTitle from '@/components/home-title';
-import MacBook from '@/components/macbook';
+import HomeContent from '@/components/home-content';
 
 export default function Home() {
   return (
     <section className="transition-opacity dark:opacity-80">
-      <MacBook />
-      <HomeTitle />
+      <HomeContent />
     </section>
   );
 }
