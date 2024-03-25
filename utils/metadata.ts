@@ -16,8 +16,6 @@ interface IMetadata {
 }
 
 const websiteURL = 'https://golee.me';
-const defaultImage = `/thumbnail.png`;
-
 const siteName = 'golee.me';
 const locale = 'en_GB';
 
@@ -25,7 +23,7 @@ export default function metadata(props: IMetadata): Metadata {
   const { title, description: desc, path, image, label1, label2 } = props;
   const description = desc + ' | GO Lee';
 
-  const images = websiteURL + (image ?? defaultImage);
+  const images = `${websiteURL}${image}`;
 
   return {
     title,
