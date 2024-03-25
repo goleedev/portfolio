@@ -1,10 +1,11 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import { GeistMono } from 'geist/font/mono';
 import { GeistSans } from 'geist/font/sans';
 import type { Metadata } from 'next';
 
-import { ThemeProvider } from '@/components/theme-provider';
-import Header from '@/components/header';
 import Footer from '@/components/footer';
+import Header from '@/components/header';
+import { ThemeProvider } from '@/components/theme-provider';
 
 import './globals.css';
 
@@ -34,6 +35,7 @@ export default function RootLayout({
           </main>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-YRD5D26SBT" />
     </html>
   );
 }
