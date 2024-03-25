@@ -13,6 +13,15 @@ export const metadata: Metadata = {
   title: 'GO Lee | Frontend Engineer',
   description:
     'Loves to build things with code. Currently building things with Next.js, TypeScript, and Tailwind CSS.',
+  openGraph: {
+    title: 'GO Lee | Frontend Engineer',
+    description:
+      'Loves to build things with code. Currently building things with Next.js, TypeScript, and Tailwind CSS.',
+    url: 'https://golee.me',
+    siteName: 'GO Lee',
+    images: ['https://golee.me/thumbnail.png'],
+    locale: 'en_GB',
+  },
 };
 
 export default function RootLayout({
