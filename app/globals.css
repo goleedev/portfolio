@@ -496,7 +496,8 @@ span[data-rehype-pretty-code-figure] code span span::after {
 
     font-size: 1.2rem;
     font-weight: 500;
-    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   p {
