@@ -6,7 +6,7 @@ import PageTitle from '@/components/page-title';
 
 export default function BlogPage() {
   return (
-    <section className="flex flex-col pt-24 pb-20 px-3 gap-8">
+    <section className="flex flex-col gap-8">
       <PageTitle
         title="💭 Blog."
         description="Learning & growing with my thoughts on FE"

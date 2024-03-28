@@ -17,7 +17,7 @@ export default async function BlogPostPage({ params }: IBlogPost) {
   if (!post) notFound();
 
   return (
-    <article className="flex flex-col pt-24 pb-14 px-3 gap-1">
+    <article className="flex flex-col gap-1">
       <h1 className="text-2xl font-mono font-extrabold border-l-4 pb-5 border-orange dark:border-blue pl-3">
         {post.title}
       </h1>
