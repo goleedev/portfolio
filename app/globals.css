@@ -447,20 +447,14 @@ html {
 
 span[data-rehype-pretty-code-figure] code span {
   @apply relative bg-white text-black font-bold dark:text-white dark:bg-black;
+
+  margin: 0 -1px;
 }
 
 span[data-rehype-pretty-code-figure] code span span::before,
 span[data-rehype-pretty-code-figure] code span span::after {
-  content: '`';
+  content: '';
   position: absolute;
-}
-
-span[data-rehype-pretty-code-figure] code span span::before {
-  left: -10px;
-}
-
-span[data-rehype-pretty-code-figure] code span span::after {
-  right: -8px;
 }
 
 .dark [data-rehype-pretty-code-figure] pre {
@@ -495,6 +489,14 @@ span[data-rehype-pretty-code-figure] code span span::after {
     font-weight: 600;
     margin-top: 2.5rem;
     margin-bottom: 2rem;
+  }
+
+  h3 {
+    @apply w-fit text-orange dark:text-blue;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0;
   }
 
   p {
