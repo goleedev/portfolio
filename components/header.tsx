@@ -29,7 +29,7 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed flex w-full max-w-screen-md px-4 justify-between py-5 bg-transparent z-50">
+    <header className="fixed flex w-full max-w-screen-md px-4 justify-between py-5 z-50 animate-in fade-in slide-in-from-top bg-white dark:bg-black">
       <nav>
         <ul className="flex space-x-4">
           <NavLink title="Home" href="/" />

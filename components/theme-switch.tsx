@@ -14,7 +14,7 @@ export default function ThemeSwitch() {
   }
 
   return (
-    <label className="flex cursor-pointer select-none items-center transition-all">
+    <label className="flex cursor-pointer select-none items-center animate-in fade-in slide-in-from-top">
       <div className="relative">
         <input
           type="checkbox"
