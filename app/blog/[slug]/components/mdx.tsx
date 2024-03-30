@@ -1,4 +1,7 @@
+'use client';
+
 import { useMDXComponent } from 'next-contentlayer/hooks';
+import { MDXEmbedProvider } from 'mdx-embed';
 
 const components = {
   a: ({ ...props }: React.HTMLAttributes<HTMLAnchorElement>) => (
@@ -15,8 +18,10 @@ export function Mdx({ code }: { code: string }) {
   const Component = useMDXComponent(code);
 
   return (
-    <div className="blog flex flex-col flex-1">
-      <Component components={components} />
-    </div>
+    <MDXEmbedProvider>
+      <div className="blog flex flex-col flex-1">
+        <Component components={components} />
+      </div>
+    </MDXEmbedProvider>
   );
 }
