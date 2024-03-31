@@ -9,7 +9,7 @@ export default function BlogPage() {
     <section className="flex flex-col gap-8">
       <PageTitle
         title="💭 Blog."
-        description="Learning & growing with my thoughts on FE"
+        description="Learning & growing with my thoughts on programming"
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-8">
         {allPosts
