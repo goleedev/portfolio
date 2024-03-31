@@ -18,7 +18,7 @@ export default async function BlogPostPage({ params }: IBlogPost) {
 
   return (
     <article className="flex flex-col gap-1">
-      <h1 className="text-2xl font-mono font-extrabold border-l-4 pb-5 border-orange dark:border-blue pl-3">
+      <h1 className="text-2xl font-mono font-extrabold border-l-4 mb-5 border-orange dark:border-blue pl-3">
         {post.title}
       </h1>
       <time className="text-gray dark:text-gray-light text-sm mt-2 ml-auto">
