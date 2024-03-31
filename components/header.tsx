@@ -32,7 +32,7 @@ export default function Header() {
         <span
           className={`w-fit ${
             activePath(href) &&
-            'font-bold underline decoration-orange-light dark:decoration-blue-light decoration-4'
+            'font-bold underline decoration-orange-light dark:decoration-blue decoration-4'
           }`}
         >
           {title}
@@ -73,7 +73,7 @@ export default function Header() {
   );
 
   const MainHeader = () => (
-    <header className="fixed w-full flex max-w-screen-md px-4 justify-between py-5 z-50 animate-in fade-in slide-in-from-top bg-transparent">
+    <header className="fixed w-full flex max-w-screen-md px-4 justify-between py-5 z-50 bg-transparent">
       <nav>
         <ul className="flex space-x-4">
           <NavLink title="Home" href="/" />
