@@ -483,19 +483,25 @@ span[data-rehype-pretty-code-figure] code span span::after {
 
 .blog {
   h2 {
-    @apply w-fit bg-orange-light px-1.5 leading-3 dark:bg-blue-light;
+    @apply w-fit font-bold bg-orange-light px-1.5 leading-3 dark:bg-blue-light;
 
     font-size: 1.5rem;
-    font-weight: 600;
     margin-top: 2.5rem;
     margin-bottom: 2rem;
   }
 
   h3 {
-    @apply w-fit text-orange dark:text-blue;
+    @apply w-fit font-bold text-orange dark:text-blue;
 
     font-size: 1.2rem;
-    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    @apply font-bold underline underline-offset-2 decoration-orange dark:decoration-blue;
+
+    font-size: 1rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
@@ -505,6 +511,13 @@ span[data-rehype-pretty-code-figure] code span span::after {
 
     img {
       max-width: 100%;
+      border-radius: 12px;
+      margin: 0 auto;
+    }
+
+    img {
+      @apply w-full md:max-w-lg;
+
       border-radius: 12px;
       margin: 0 auto;
     }
