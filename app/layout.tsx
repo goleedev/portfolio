@@ -19,7 +19,6 @@ export const metadata: Metadata = {
       'Loves to build things with code. Currently building things with Next.js, TypeScript, and Tailwind CSS.',
     url: 'https://golee.me',
     siteName: 'GO Lee',
-    images: ['https://golee.me/thumbnail.png'],
     locale: 'en_GB',
   },
 };
