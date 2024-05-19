@@ -20,6 +20,12 @@ export const metadata: Metadata = {
     url: 'https://golee.me',
     siteName: 'GO Lee',
     locale: 'en_GB',
+    images: [
+      {
+        url: '/opengraph-image.png',
+        alt: 'GO Lee Blog Open Graph Image',
+      },
+    ],
   },
 };
 
